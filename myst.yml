@@ -1,0 +1,14 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: ab1a0d9b-99f4-41e5-b06c-cfcdde01f805
+  title: Karl Michael Gaca Portfolio
+  description: Data science coursework and projects — PyTorch labs, model architectures, and experiments.
+  # keywords: []
+  # authors: []
+  github: https://github.com/kawlows
+site:
+  template: book-theme
+  options:
+    style: custom.css
+    # favicon: favicon.ico

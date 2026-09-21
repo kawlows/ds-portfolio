@@ -1,0 +1,7 @@
+version: 1
+
+project:
+  title: Karl Michael Gaca Portfolio
+  description: Machine learning, IoT, and software development portfolio
+  toc:
+    - file: index.md

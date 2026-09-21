@@ -1,0 +1,8 @@
+format: jb-book
+root: intro
+chapters:
+  - file: Laboratory_Task_2_Forward_Pass
+  - file: Laboratory_Task_3_Forward_Backward_Propagation
+  - file: Laboratory_Task_4_Linear_Regression
+  - file: Laboratory_Task_5_Tensor_Operations
+  - file: Laboratory_Task_6_CNN_Architecture
