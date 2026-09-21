@@ -1,1 +1,1 @@
-import{a}from"/myst_assets_folder/_shared/chunk-OKOLQ3QQ.js";import"/myst_assets_folder/_shared/chunk-OZE3FFNP.js";export default a();
+import{a}from"/ds-portfolio/build/_shared/chunk-OKOLQ3QQ.js";import"/ds-portfolio/build/_shared/chunk-OZE3FFNP.js";export default a();
