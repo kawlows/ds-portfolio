@@ -1,0 +1,214 @@
+/* User Provided Stylesheet */
+
+/* ============================================================
+   Karl Michael Gaca — portfolio theme
+   Dark, hand-inked graphic-novel / concept-art system.
+   Near-black grounds, gunmetal panels, sparse desaturated-neon
+   accents. No warm tones, no logos, no in-world iconography —
+   purely abstract inked linework and procedural texture.
+   ============================================================ */
+
+:root {
+  --bg-0: #0a0a0f;
+  --bg-1: #111118;
+  --charcoal-0: #1a1b1f;
+  --charcoal-1: #24262c;
+  --gunmetal-0: #2e3138;
+  --gunmetal-1: #3c4048;
+  --ink: #050506;
+  --text-0: #d6d7db;
+  --text-1: #9a9ca3;
+  --neon-cyan: #5ea8a8;
+  --neon-magenta: #96527a;
+  --neon-green: #5e8a60;
+
+  --tw-prose-body: var(--text-0);
+  --tw-prose-headings: #eceef1;
+  --tw-prose-links: var(--neon-cyan);
+  --tw-prose-bold: #eceef1;
+  --tw-prose-counters: var(--text-1);
+  --tw-prose-bullets: var(--text-1);
+  --tw-prose-hr: var(--gunmetal-1);
+  --tw-prose-quotes: var(--text-0);
+  --tw-prose-quote-borders: var(--neon-cyan);
+  --tw-prose-captions: var(--text-1);
+  --tw-prose-code: var(--neon-green);
+  --tw-prose-pre-code: var(--text-0);
+  --tw-prose-pre-bg: var(--charcoal-0);
+  --tw-prose-th-borders: var(--gunmetal-1);
+  --tw-prose-td-borders: var(--charcoal-1);
+}
+
+/* ---- Base ground: near-black with a faint distressed-paper texture ---- */
+html, body {
+  background-color: var(--bg-0) !important;
+  color: var(--text-0) !important;
+  background-image: url('/assets/texture-paper.jpg');
+  background-repeat: repeat;
+  background-size: 512px 512px;
+  background-blend-mode: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #eceef1 !important;
+  font-weight: 700;
+}
+
+/* a hand-inked underline accent beneath top-level headings */
+h1 {
+  border-bottom: 2px solid var(--gunmetal-1);
+  padding-bottom: 0.35em;
+  position: relative;
+}
+
+pre, code, kbd, samp, .cm-editor, .cm-content, .highlight {
+  background-color: var(--charcoal-0) !important;
+  color: var(--text-0) !important;
+  border-color: var(--gunmetal-1) !important;
+}
+
+a, a:visited {
+  color: var(--neon-cyan) !important;
+  text-decoration-color: var(--neon-cyan);
+}
+a:hover, a:focus {
+  color: var(--neon-magenta) !important;
+}
+
+::selection {
+  background: var(--neon-cyan);
+  color: var(--bg-0);
+}
+
+/* ---- Chrome: header / nav / sidebar as inked gunmetal panels ---- */
+header, .navbar, nav {
+  background-color: var(--bg-1) !important;
+  background-image: url('/assets/texture-metal.jpg');
+  background-repeat: repeat;
+  background-size: 640px 640px;
+  border-bottom: 3px solid var(--ink) !important;
+}
+
+footer, .footer {
+  background-color: var(--bg-1) !important;
+  border-top: 3px solid var(--ink) !important;
+  color: var(--text-1) !important;
+}
+
+aside, .sidebar, .toc, .side-panel {
+  background-color: var(--charcoal-0) !important;
+  border-color: var(--gunmetal-0) !important;
+  color: var(--text-1) !important;
+}
+
+main, article, .content, .article {
+  background-color: transparent;
+}
+
+/* ---- Hero / landing banner: full-bleed inked concept-art backgrounds ---- */
+.hero, .landing-hero, .frontmatter-hero, #hero {
+  background-image:
+    linear-gradient(180deg, rgba(10,10,15,0.35), rgba(10,10,15,0.85)),
+    url('/assets/hero-1.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 4px solid var(--ink);
+}
+
+/* ---- Cards / panels: gunmetal fill + scratched-panel texture + inked frame ---- */
+.card, .panel, .callout, .admonition {
+  background-color: var(--charcoal-1) !important;
+  background-image: url('/assets/texture-panels.png');
+  background-repeat: repeat;
+  background-size: 384px 384px;
+  border: 2px solid var(--ink) !important;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px var(--gunmetal-1);
+}
+
+/* green-alert-style documentation callouts, restyled for the dark system */
+.admonition.note, .admonition.tip, .callout.note {
+  border-left: 4px solid var(--neon-green) !important;
+}
+.admonition.warning, .callout.warning {
+  border-left: 4px solid var(--neon-magenta) !important;
+}
+.admonition.important, .callout.important {
+  border-left: 4px solid var(--neon-cyan) !important;
+}
+
+blockquote {
+  border-left: 3px solid var(--neon-cyan) !important;
+  color: var(--text-1);
+  background-color: var(--charcoal-0);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--gunmetal-1) !important;
+}
+
+table {
+  border-color: var(--gunmetal-1) !important;
+  background-color: var(--charcoal-0);
+}
+table th {
+  background-color: var(--bg-1) !important;
+  color: #eceef1 !important;
+  border-color: var(--ink) !important;
+}
+table td, table th {
+  border-color: var(--gunmetal-0) !important;
+}
+
+/* ---- Buttons: hand-inked angled panel background ---- */
+button, .button, .btn, input[type="submit"] {
+  background-color: var(--charcoal-1) !important;
+  background-image: url('/assets/button-bg.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: var(--text-0) !important;
+  border: none;
+  padding: 0.6em 1.4em;
+}
+button:hover, .button:hover, .btn:hover {
+  color: #ffffff !important;
+  filter: brightness(1.15);
+}
+
+/* ---- Cross-hatched shading swatch, used behind code blocks and quotes ---- */
+pre {
+  background-image: url('/assets/texture-hatch.jpg');
+  background-blend-mode: overlay;
+  background-size: 320px 320px;
+}
+
+/* scrollbar kept inside the palette */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-1); }
+::-webkit-scrollbar-thumb { background: var(--gunmetal-1); border-radius: 0; }
+
+/* ---- Hand-inked corner brackets on the main content frame ---- */
+main, article, .content {
+  position: relative;
+}
+main::before, article::before {
+  content: "";
+  position: absolute;
+  top: -6px; left: -6px;
+  width: 64px; height: 64px;
+  background-image: url('/assets/corner-bracket.svg');
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* inked divider between sections, drop in via <hr class="ink-divider"> */
+hr.ink-divider {
+  height: 40px;
+  border: none;
+  background-image: url('/assets/divider-horizontal.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

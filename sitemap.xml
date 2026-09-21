@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:3000/sitemap_style.xsl" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:3000</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-2-forward-pass</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-3-forward-backward-propagation</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-4-linear-regression</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-5-tensor-operations</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/laboratory-task-6-cnn-architecture</loc>
+  </url>
+</urlset>
