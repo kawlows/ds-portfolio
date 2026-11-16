@@ -128,3 +128,7 @@ Figure 3 puts training and validation loss side by side. At $\eta = 0.001$ the t
 - H. Xiao, K. Rasul & R. Vollgraf (2017), "Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms": <https://arxiv.org/abs/1708.07747>
 - PyTorch documentation, `torch.optim.SGD`: <https://docs.pytorch.org/docs/stable/generated/torch.optim.SGD.html>
 - Code for this post: <https://github.com/kawlows/learning-rate-cnn>
+
+## AI tool use
+
+I used Claude (Anthropic) to debug my training code and to check the grammar of this post.
